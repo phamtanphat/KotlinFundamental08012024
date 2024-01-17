@@ -46,15 +46,31 @@ fun main() {
     // 2. || Tất cả điều kiện là false thì mới trả về false
     // 3. ! Phủ định của điều kiện
 
-    val a = 5
-    val b = 10
+//    val a = 5
+//    val b = 10
+//
+//    if (a > b) {
+//        print("A lon hon B")
+//    } else if (a < b) {
+//        print("A be hon B")
+//    } else {
+//        print("A bang B")
+//    }
 
-    if (a > b) {
-        print("A lon hon B")
-    } else if (a < b) {
-        print("A be hon B")
-    } else {
-        print("A bang B")
+    // Vi du: Tính chỉ số BMI
+
+    val height = 1.75f // Đơn vị tính là m
+    val weight = 70.5f // Đơn vị tính là kg
+    val bmi = (weight / (height * height))
+
+    // Output: Thuộc phân loại nào
+    // Code convention
+    // https://en.wikipedia.org/wiki/List_of_Unicode_characters
+    if (bmi < 18.5) {
+        println("Cân nặng thấp (gầy)")
+    } else if (bmi <= 24.9) {
+        println("Bình thường")
+    } else if (bmi <= 29.9) {
+        println("Tiền béo phì \u01C0")
     }
-
 }
