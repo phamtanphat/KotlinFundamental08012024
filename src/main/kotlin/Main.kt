@@ -24,7 +24,12 @@ fun main() {
         var weight: Double = 70.5
         var isMale: Boolean = true
 
-        Quy tắc đặt tên biến
+        Quy tắc đặt tên
+        1:Camelcase (Biến, phương thức):
+           a.Nếu == 1 từ: name, age, address
+           b.Nếu >= 2 từ: doSomething, displayMap, makeDisplayOnView
+        2.Pascalcase (Class và tên File): Person, Animal, CategoryClass, UserClass
+        3.Underscore (file thuộc web hoặc backend): refresh_token, button_navigate
      */
 
 }
