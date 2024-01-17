@@ -30,6 +30,31 @@ fun main() {
            b.Nếu >= 2 từ: doSomething, displayMap, makeDisplayOnView
         2.Pascalcase (Class và tên File): Person, Animal, CategoryClass, UserClass
         3.Underscore (file thuộc web hoặc backend): refresh_token, button_navigate
+
+        3: Câu điều kiện
+
      */
+    // Biểu thức so sánh trả về giá trị kiểu Boolean
+    // 1. Lớn hơn: a > b
+    // 2. Bé hơn: a < b
+    // 3. Bằng hơn: a == b
+    // 4. Lớn hơn bằng: a >= b <=>(a > b || a == b)
+    // 5. Bé hơn bằng: a <= b <=>(a < b || a == b)
+
+    // Toán tử logic
+    // 1. && Thoả tất cả điều kiện mới trả về true
+    // 2. || Tất cả điều kiện là false thì mới trả về false
+    // 3. ! Phủ định của điều kiện
+
+    val a = 5
+    val b = 10
+
+    if (a > b) {
+        print("A lon hon B")
+    } else if (a < b) {
+        print("A be hon B")
+    } else {
+        print("A bang B")
+    }
 
 }
