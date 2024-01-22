@@ -83,27 +83,43 @@ fun main() {
         }
 
         4: Câu điều kiện (when giống với switch case)
+        val month = 3
+        val message = when (month) {
+            in 1..3 -> {
+               "Quy 1"
+            }
+            in 4..6 -> {
+                "Quy 2"
+            }
+            in 7..9 -> {
+                "Quy 3"
+            }
+            in 10..12 -> {
+                "Quy 4"
+            }
+            else ->"Khong xac dinh"
+        }
      */
 
-    val month = 3
-    when (month) {
-        in 1..3 -> {
-            println("Ket qua")
-            println("Quy 1")
-        }
-        in 4..6 -> {
-            println("Ket qua")
-            println("Quy 2")
-        }
-        in 7..9 -> {
-            println("Ket qua")
-            println("Quy 3")
-        }
-        in 10..12 -> {
-            println("Ket qua")
-            println("Quy 4")
-        }
-        else -> println("Khong xac dinh")
-    }
+    // 5: Vòng lặp for (Duyệt dữ liệu trong 1 khoảng nào đó)
+    // for (value in 100 downTo 1) {
+        // 1: Chỉ in ra số chẳn
+        // Solution: Số chia hết cho 2
+        // if (value % 2 == 0) {
+        //    println(value)
+        //}
+
+        // 2: Chỉ in ra số lẻ
+        // if (value % 2 == 1) {
+        //    println(value)
+        //}
+
+        // 3: Chỉ in ra số chia 3 dư 1
+        // if (value % 3 == 1) {
+        //    println(value)
+        // }
+
+        // println(value)
+    //}
 
 }
