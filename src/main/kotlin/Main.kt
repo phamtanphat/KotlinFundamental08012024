@@ -122,4 +122,25 @@ fun main() {
         // println(value)
     //}
 
+    // Kiểm tra số nguyên tố
+
+    var number = 408
+    var isPrime = true
+
+    if (number < 2) {
+        println("Khong phai la so nguyen to")
+    } else {
+        for (value in 2 ..< number) {
+            if (number % value == 0) {
+                // Uoc thu 3 xuat hien
+                isPrime = false
+            }
+        }
+
+        if (isPrime) {
+            println("La so nguyen to")
+        } else {
+            println("Khong phai la so nguyen to")
+        }
+    }
 }
