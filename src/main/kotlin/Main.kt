@@ -95,10 +95,6 @@ fun main() {
             println("Ket qua")
             println("Quy 2")
         }
-        in 4..6 -> {
-            println("Ket qua")
-            println("Quy 2")
-        }
         in 7..9 -> {
             println("Ket qua")
             println("Quy 3")
