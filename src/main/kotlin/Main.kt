@@ -66,11 +66,20 @@ fun main() {
     // Output: Thuộc phân loại nào
     // Code convention
     // https://en.wikipedia.org/wiki/List_of_Unicode_characters
-    if (bmi < 18.5) {
-        println("Cân nặng thấp (gầy)")
+    // if (bmi < 18.5) {
+    //    println("Cân nặng thấp (gầy)")
+    // } else if (bmi <= 24.9) {
+    //    println("Bình thường")
+    // } else if (bmi <= 29.9) {
+    //    println("Tiền béo phì \u01C0")
+    //}
+
+    // Toan tu 3 ngoi
+    val message = if (bmi < 18.5) {
+        "Cân nặng thấp (gầy)"
     } else if (bmi <= 24.9) {
-        println("Bình thường")
-    } else if (bmi <= 29.9) {
-        println("Tiền béo phì \u01C0")
+        "Bình thường"
+    } else {
+        "Khong xac dinh"
     }
 }
