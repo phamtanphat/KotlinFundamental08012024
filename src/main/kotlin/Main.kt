@@ -99,48 +99,54 @@ fun main() {
             }
             else ->"Khong xac dinh"
         }
-     */
 
-    // 5: Vòng lặp for (Duyệt dữ liệu trong 1 khoảng nào đó)
-    // for (value in 100 downTo 1) {
-        // 1: Chỉ in ra số chẳn
-        // Solution: Số chia hết cho 2
-        // if (value % 2 == 0) {
-        //    println(value)
-        //}
+        5: Vòng lặp for (Duyệt dữ liệu trong 1 khoảng nào đó)
+         for (value in 100 downTo 1) {
+             1: Chỉ in ra số chẳn
+             Solution: Số chia hết cho 2
+             if (value % 2 == 0) {
+                println(value)
+            }
 
-        // 2: Chỉ in ra số lẻ
-        // if (value % 2 == 1) {
-        //    println(value)
-        //}
+             2: Chỉ in ra số lẻ
+             if (value % 2 == 1) {
+                println(value)
+            }
 
-        // 3: Chỉ in ra số chia 3 dư 1
-        // if (value % 3 == 1) {
-        //    println(value)
-        // }
+             3: Chỉ in ra số chia 3 dư 1
+             if (value % 3 == 1) {
+                println(value)
+             }
 
-        // println(value)
-    //}
+             println(value)
+        }
 
-    // Kiểm tra số nguyên tố
+        Kiểm tra số nguyên tố
+        var number = 408
+        var isPrime = true
 
-    var number = 408
-    var isPrime = true
+        if (number < 2) {
+            println("Khong phai la so nguyen to")
+        } else {
+            for (value in 2 ..< number) {
+                if (number % value == 0) {
+                    // Uoc thu 3 xuat hien
+                    isPrime = false
+                }
+            }
 
-    if (number < 2) {
-        println("Khong phai la so nguyen to")
-    } else {
-        for (value in 2 ..< number) {
-            if (number % value == 0) {
-                // Uoc thu 3 xuat hien
-                isPrime = false
+            if (isPrime) {
+                println("La so nguyen to")
+            } else {
+                println("Khong phai la so nguyen to")
             }
         }
+     */
 
-        if (isPrime) {
-            println("La so nguyen to")
-        } else {
-            println("Khong phai la so nguyen to")
-        }
+    // 6: Ham lap while
+    var index = 0
+    while (index <= 10) {
+        println(index)
+        index += 1
     }
 }
