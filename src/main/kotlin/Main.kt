@@ -141,30 +141,26 @@ fun main() {
                 println("Khong phai la so nguyen to")
             }
         }
+
+        6: Ham lap while
+        var index = 0
+        while (index <= 10) {
+            in tat ca cac so so
+            chi bo qua neu index = 2
+            val tmpIndex = index
+            index += 1
+            if (tmpIndex == 2) {
+                continue
+            }
+            println(tmpIndex)
+        }
+
+        Chuyen sang for
+        for (value in 0..10) {
+            if (value == 2) continue
+            println(value)
+        }
      */
 
-    // 6: Ham lap while
-    var index = 0
-    while (index <= 10) {
-//        val tmpIndex = index
-//        index += 1
-//        if (tmpIndex == 2) {
-//            continue
-//        }
-//        println(tmpIndex)
-//        in tat ca cac so so
-//        chi bo qua neu index = 2
-        val tmpIndex = index
-        index += 1
-        if (tmpIndex == 2) {
-            continue
-        }
-        println(tmpIndex)
-    }
 
-    // Chuyen sang for
-    for (value in 0..10) {
-        if (value == 2) continue
-        println(value)
-    }
 }
