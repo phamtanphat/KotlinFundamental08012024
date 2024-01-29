@@ -1,3 +1,5 @@
+import model.Person
+
 fun main() {
     /*
          1: Khai báo biến
@@ -162,29 +164,11 @@ fun main() {
         }
      */
 
-    // 7: Toan tu
-    // a += 1
-    var a = 10
-    var b = 5
+    // Class va object (instance)
+    // Coi thêm giải thích về Solid
 
-    var result = a-- + b-- + --b + a++ - --b + b-- + a--
-    // 10 + b-- + --b + a++ - --b + b-- + a-- ; a = 9 , b = 5
-    // 10 + 5 + --b + a++ - --b + b-- + a-- ; a = 9 , b = 4
-    // 10 + 5 + 3 + a++ - --b + b-- + a-- ; a = 9 , b = 3
-    // 10 + 5 + 3 + 9 - --b + b-- + a-- ; a = 10 , b = 3
-    // 10 + 5 + 3 + 9 - 2 + b-- + a-- ; a = 10 , b = 2
-    // 10 + 5 + 3 + 9 - 2 + 2 + a-- ; a = 10 , b = 1
-    // 10 + 5 + 3 + 9 - 2 + 2 + 10 ; a = 9 , b = 1
-    // 10 + 5 + 3 + 9 - 2 + 2 + 10 ; a = 9 , b = 1
-    // 37
-
-    // a = 9
-    // b = 1
-    // result = 37
-
-    println("A " + a)
-    println("B " + b)
-    println("Result " + result)
-
-
+    // Khoi tao object
+    var teo: Person = Person()
+    teo.name = "Nguyen Van Teo"
+    teo.age = 3
 }
