@@ -168,7 +168,8 @@ fun main() {
     // Coi thêm giải thích về Solid
 
     // Khoi tao object
-    var teo: Person = Person()
+    var teo: Person = Person("teo", 3)
+    teo.address = "Quan 10"
     teo.name = "Nguyen Van Teo"
     teo.age = 3
 }
