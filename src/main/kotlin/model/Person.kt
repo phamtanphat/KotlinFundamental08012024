@@ -1,10 +1,37 @@
 package model
 
 class Person(
-    var name: String,
-    var age: Int,
-    var address: String? = null
+    private var name: String,
+    private var age: Int,
+    private var address: String? = null,
 ) {
+
+    // getter va setter
+    fun getName(): String {
+        return name
+    }
+
+    fun setName(name: String) {
+        this.name = name
+    }
+
+    fun getAge(): Int {
+        return age
+    }
+
+    fun setAge(age: Int) {
+        this.age = age
+    }
+
+    fun getAddress(): String? {
+        return address
+    }
+
+    fun setAddress(address: String) {
+        this.address = address
+    }
+
+
     // Thuoc tinh
     // var name: String = ""
     // var age: Int = 0
@@ -14,16 +41,16 @@ class Person(
 
     // Second constructor
 
-    var height: Float = 0f
-
-    constructor(
-        name: String,
-        age: Int,
-        address: String?,
-        height: Float,
-    ): this(name, age, address) {
-        this.height = height
-    }
+//    var height: Float = 0f
+//
+//    constructor(
+//        name: String,
+//        age: Int,
+//        address: String?,
+//        height: Float,
+//    ): this(name, age, address) {
+//        this.height = height
+//    }
 
     // Tham trị: Khi truyền dữ liệu chỉ truyền giá trị
     // Sử dụng kiêu dữ liệu nguyên thuỷ: String, Boolean, Int, Float..

@@ -170,8 +170,11 @@ fun main() {
 
     // Khoi tao object
     val teo: Person = Person("teo", 3)
-    teo.address = "Quan 10"
-    teo.name = "Nguyen Van Teo"
-    teo.age = 3
-    teo.height = 10f
+    teo.setName("Nguyen Van teo")
+
+    // Tính chất hướng đối tượng
+    // 1. Đóng gói
+    // 2. Kế thừa
+    // 3. Đa hình
+    // 4. Trừu tượng
 }
