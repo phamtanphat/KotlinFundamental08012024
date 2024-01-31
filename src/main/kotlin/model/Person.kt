@@ -6,6 +6,16 @@ class Person(
     private var address: String? = null,
 ) {
 
+    // Getter va setter
+//    var height: Float = 0f
+//        set(value) {
+//            field = value + 1
+//        }
+//
+//        get() {
+//            return field - 3
+//        }
+
     // getter va setter
     fun getName(): String {
         return name

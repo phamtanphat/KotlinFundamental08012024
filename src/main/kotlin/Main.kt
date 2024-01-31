@@ -171,6 +171,8 @@ fun main() {
     // Khoi tao object
     val teo: Person = Person("teo", 3)
     teo.setName("Nguyen Van teo")
+    teo.height = 1f
+    println(teo.height)
 
     // Tính chất hướng đối tượng
     // 1. Đóng gói
