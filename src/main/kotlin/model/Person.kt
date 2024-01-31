@@ -25,8 +25,22 @@ class Person(
         this.height = height
     }
 
-    // Tham tri: Khi truyền dữ liệu chỉ truyền giá trị
-    // Tham chieu: Khi truyền dữ liệu sẽ truyền địa chỉ
+    // Tham trị: Khi truyền dữ liệu chỉ truyền giá trị
+    // Sử dụng kiêu dữ liệu nguyên thuỷ: String, Boolean, Int, Float..
+
+    // Example:
+    // var a = 5
+    // var b = a
+    // Khi a gán cho b, a chỉ gán phần giá trị
+
+    // Tham chiếu: Khi truyền dữ liệu sẽ truyền địa chỉ
+    // Sử dụng kiểu Object
+
+    // Example:
+    // var teo = Person()
+    // var ti = teo
+    // Khi teo gán cho ti, teo gán phần địa chỉ cho ti
+    // => teo va ti cùng 1 địa chỉ
 
     // Hanh vi
 
