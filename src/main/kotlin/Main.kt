@@ -169,13 +169,15 @@ fun main() {
     // Coi thêm giải thích về Solid
 
     // Khoi tao object
-    val teo: Person = Person("teo", 3)
-    teo.setName("Nguyen Van teo")
-    teo.height = 1f
-    println(teo.height)
+//    val teo: Person = Person("teo", 3)
+//    teo.setName("Nguyen Van teo")
+//    teo.height = 1f
+//    println(teo.height)
+
+
 
     // Tính chất hướng đối tượng
-    // 1. Đóng gói
+    // 1. Đóng gói: Quản lý giá trị đầu vào - triển khai bằng getter, setter, visibility visible
     // 2. Kế thừa
     // 3. Đa hình
     // 4. Trừu tượng
