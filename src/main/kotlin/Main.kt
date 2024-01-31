@@ -1,4 +1,5 @@
 import model.Person
+import java.util.Objects
 
 fun main() {
     /*
@@ -168,8 +169,9 @@ fun main() {
     // Coi thêm giải thích về Solid
 
     // Khoi tao object
-    var teo: Person = Person("teo", 3)
+    val teo: Person = Person("teo", 3)
     teo.address = "Quan 10"
     teo.name = "Nguyen Van Teo"
     teo.age = 3
+    teo.height = 10f
 }
