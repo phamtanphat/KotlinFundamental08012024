@@ -177,7 +177,7 @@ fun main() {
 
     // Tính chất hướng đối tượng
     // 1. Đóng gói: Quản lý giá trị đầu vào - triển khai bằng getter, setter, visibility visible
-    // 2. Kế thừa
+    // 2. Kế thừa: Lớp con sẽ thừa hưởng thuộc tính và phương thức từ lớp cha
     // 3. Đa hình
     // 4. Trừu tượng
 
@@ -185,5 +185,9 @@ fun main() {
 //    person.printInfo()
 
     val parent = Parent("Dad", 60, "do something")
-    parent.printInfo()
+    parent.printSomething()
+
+    // Overload: Phương thức nạp chồng
+    // Vị trí: Cùng nằm trong 1 chỗ (Lớp, Interface, abstract)
+    // Đặc điểm: Giống với nhau về tên nhưng tham số phải khác nhau
 }

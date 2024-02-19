@@ -82,8 +82,17 @@ open class Person(
 
     // Hanh vi
 
-    fun printInfo() {
+    open fun printInfo() {
         println("Name: $name")
         println("Age: $age")
+    }
+
+
+    fun printSomething() {
+        println("Something 1")
+    }
+
+    fun printSomething(work: String) {
+        println(work)
     }
 }

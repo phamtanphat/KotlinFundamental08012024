@@ -6,4 +6,8 @@ class Parent(
     var work: String
 ): Person(name, age) {
 
+
+    override fun printInfo() {
+        super.printInfo()
+    }
 }
