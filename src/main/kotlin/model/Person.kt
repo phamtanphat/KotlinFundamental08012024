@@ -87,7 +87,6 @@ open class Person(
         println("Age: $age")
     }
 
-
     fun printSomething() {
         println("Something 1")
     }

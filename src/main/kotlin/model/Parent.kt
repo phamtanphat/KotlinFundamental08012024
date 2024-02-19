@@ -8,6 +8,6 @@ class Parent(
 
 
     override fun printInfo() {
-        super.printInfo()
+        println("Print my parent")
     }
 }

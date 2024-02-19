@@ -1,5 +1,7 @@
 import model.Parent
 import model.Person
+import model.PizzaMeat
+import model.PizzaStore
 import java.util.Objects
 
 fun main() {
@@ -178,16 +180,23 @@ fun main() {
     // Tính chất hướng đối tượng
     // 1. Đóng gói: Quản lý giá trị đầu vào - triển khai bằng getter, setter, visibility visible
     // 2. Kế thừa: Lớp con sẽ thừa hưởng thuộc tính và phương thức từ lớp cha
-    // 3. Đa hình
+    // 3. Đa hình: Thể hiện thông qua việc override phương thức của lớp cha
     // 4. Trừu tượng
 
 //    val person = Person("Phat", 30)
 //    person.printInfo()
 
-    val parent = Parent("Dad", 60, "do something")
-    parent.printSomething()
+//    val parent = Parent("Dad", 60, "do something")
+//    parent.printInfo()
 
     // Overload: Phương thức nạp chồng
     // Vị trí: Cùng nằm trong 1 chỗ (Lớp, Interface, abstract)
-    // Đặc điểm: Giống với nhau về tên nhưng tham số phải khác nhau
+    // Đặc điểm: Giống với nhau về tên nhưng tham số phải khác
+
+    // Override: Phương thức ghi đè
+    // Vị trí: Nằm ở 2 nơi khác nhau
+    // Đặc điểm: Giống với nhau về tên và tham parent
+
+    val pizzaStore = PizzaStore()
+    pizzaStore.orderPizza(PizzaMeat())
 }
