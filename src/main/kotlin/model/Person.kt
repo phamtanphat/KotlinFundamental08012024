@@ -2,8 +2,7 @@ package model
 
 class Person(
     private var name: String,
-    private var age: Int,
-    private var address: String? = null,
+    private var age: Int
 ) {
 
     // access modifier: Pham vi truy cap
@@ -83,4 +82,8 @@ class Person(
 
     // Hanh vi
 
+    fun printInfo() {
+        println("Name: $name")
+        println("Age: $age")
+    }
 }
