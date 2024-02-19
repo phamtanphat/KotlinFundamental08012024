@@ -1,3 +1,4 @@
+import model.Parent
 import model.Person
 import java.util.Objects
 
@@ -180,6 +181,9 @@ fun main() {
     // 3. Đa hình
     // 4. Trừu tượng
 
-    val person = Person("Phat", 30)
-    person.printInfo()
+//    val person = Person("Phat", 30)
+//    person.printInfo()
+
+    val parent = Parent("Dad", 60, "do something")
+    parent.printInfo()
 }
